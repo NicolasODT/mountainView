@@ -1,5 +1,3 @@
-
-
 /* Importation des polices */
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
@@ -10,7 +8,6 @@
   --text-dark: #000;
   --transition-speed: 0.3s;
 }
-
 
 /* Comportement de défilement */
 html {
