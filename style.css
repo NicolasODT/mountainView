@@ -6,7 +6,8 @@
   --primary-color: #01125e;
   --text-light: #fff;
   --text-dark: #ec1e1e;
-  --transition-speed: 0.3s;}
+  --transition-speed: 0.3s;
+}
 
 /* Comportement de défilement */
 html {
