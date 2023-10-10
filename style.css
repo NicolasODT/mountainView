@@ -1,0 +1,339 @@
+
+
+/* Importation des polices */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Variables globales */
+:root {
+  --primary-color: #015e49;
+  --text-light: #fff;
+  --text-dark: #000;
+  --transition-speed: 0.3s;
+}
+
+
+/* Comportement de défilement */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style général du corps */
+body {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+/* Style de la barre de navigation */
+nav {
+  background-color: #d3d9e7;
+  padding: 14px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  padding: 0 20px;
+  color: var(--text-dark);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Style du menu burger */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-menu .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-dark);
+}
+
+/* Style de l'en-tête */
+header {
+  position: relative;
+  background-image: url("./img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  color: var(--text-light);
+  text-align: center;
+  padding: 50px 0;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+header * {
+  position: relative;
+  z-index: 2;
+}
+
+header img {
+  width: 610px;
+}
+
+header p {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+header div {
+  margin-top: 20vh;
+}
+
+/* Styles des titres */
+h1 {
+  font-family: "anton", Helvetica, sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  margin: 60px 0 45px 0;
+}
+
+h2::after,
+h3::after {
+  content: "";
+  display: block;
+  background-color: var(--primary-color);
+}
+
+h2::after {
+  width: 90px;
+  height: 3px;
+  margin: 12px auto;
+}
+
+h3::after {
+  width: 50px;
+  height: 3px;
+  margin: 8px auto;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+/* Style des boutons */
+button {
+  background-color: transparent;
+  color: var(--text-light);
+  border: solid 1px var(--text-light);
+  padding: 10px 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+button:hover {
+  background-color: var(--text-light);
+  color: var(--text-dark);
+}
+
+/* Style des sections */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style des cartes */
+.card {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-a {
+  display: inline-block;
+  width: 24%;
+  margin: 10px;
+  text-align: center;
+}
+
+.card-a img {
+  width: 50%;
+  border-radius: 50%;
+  object-fit: center;
+}
+
+.card-a p {
+  margin: 15px auto;
+  width: 220px;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: -26px;
+}
+
+.card h3,
+.card p {
+  margin: 15px;
+}
+
+.btn-card {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border-radius: 25px;
+  padding: 14px 44px;
+  cursor: pointer;
+  border: none;
+  text-transform: none;
+}
+
+/* Style de la section avis */
+.section-avis {
+  background-color: #ededed;
+  padding: 26px 0 60px 0;
+}
+
+/* Style des formulaires */
+form {
+  margin: auto;
+  width: 60%;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px;
+  transition: border var(--transition-speed);
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--primary-color);
+}
+
+textarea {
+  height: 340px;
+}
+
+.btn-form {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 14px 70px;
+  border: transparent;
+  cursor: pointer;
+  float: left;
+}
+
+/* Style du pied de page */
+footer {
+  padding: 100px;
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  nav a {
+    margin: 0 15px;
+    padding: 0 6px;
+    font-size: 12px;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  .card,
+  .card-a {
+    width: 45%;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 560px) {
+  .burger-menu {
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .card,
+  .card-a {
+    width: 90%;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+.section-container {
+  width: 70%;
+  border: 1px solid rgb(165, 165, 165);
+  padding: 40px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section-detail {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-detail h2 {
+  font-size: 52px;
+}
