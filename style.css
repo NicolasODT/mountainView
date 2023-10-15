@@ -5,7 +5,7 @@
 :root {
   --primary-color: #015e49;
   --text-light: #fff;
-  --text-dark: #ec1e1e;
+  --text-dark: #000;
   --transition-speed: 0.3s;
 }
 
@@ -301,6 +301,9 @@ footer {
     font-size: 80px;
   }
 
+  .nav-links.active {
+    display: flex;
+}
   .card,
   .card-a {
     width: 90%;
