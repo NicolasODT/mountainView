@@ -1,6 +1,7 @@
-# Mountain View
 
-Bienvenue sur le projet "Mountain View"! Ce projet est une application web dédiée à la présentation de différentes destinations montagneuses.
+# Mountain View : Remise à Niveau CDA
+
+Bienvenue sur le projet "Mountain View"! Ce site vitrine basique est conçu comme une remise à niveau pour la formation Concepteur Développeur d'Applications (CDA). Il présente différentes destinations montagneuses de manière simple et élégante.
 
 ## Structure du projet
 
@@ -20,7 +21,7 @@ Bienvenue sur le projet "Mountain View"! Ce projet est une application web dédi
 
 Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
 
-1. **Fork** le dépôt ( `git clone https://github.com/NicolasODT/HTML`)
+1. **Fork** le dépôt ( `git clone https://github.com/NicolasODT/mountainView/`)
 2. Créez votre **Feature Branch** (`git checkout -b feature/AmazingFeature`).
 3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`).
 4. Push vers la **Branch** (`git push origin feature/AmazingFeature`).
